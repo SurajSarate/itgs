@@ -576,7 +576,7 @@ html {
 
 .about-box{
     background-image: url('./assets/mask-group/Mask\ Group\ 16.png');
-    height:90vh;
+    /* height:80vmin; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -596,40 +596,40 @@ html {
     justify-content: center;
 }
 
-@media (max-width: 770px) {
-    .vertical-line{
-       display:none;
-    }
-    .about-inner{
-       margin: 10px;
-    }
-}
+
 .algorithmic-screening .sub-title{
     font-size:6rem
 }
 
+
+
+
+
 .algorithmic-screening{
     background-color: #F0F9FD;
     height: 50rem;
+    position: relative;
 }
 
-/* .algorithmic-screening-inner{
+.algorithmic-screening-inner{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    top: 130px;
+    top: 100px;
     left: 15%;
     right:15%;
     height: 60rem;
-    overflow: hidden;
     position: absolute;
-} */
-/* .screening-inner{
+} 
+.screening-inner{
+    color:white;
     align-items: center;
+    height: 400px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
-} */
+}
+
 .screening-inner:nth-child(1){
     background-color: #67C6A8;
 }
@@ -646,10 +646,27 @@ html {
 .screening-inner .sub-title{
     font-style: karbonbold;
     font-weight:100;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .screening-inner img{
     height:30%
 }
 
+
+@media (max-width: 770px) {
+    .vertical-line{
+       display:none;
+    }
+    .about-inner{
+       margin: 10px;
+    }
+    .algorithmic-screening h2.sub-title{
+        font-size:3rem
+    }
+    
+    .algorithmic-screening-inner{
+        top:50px
+    }
+    
+}
