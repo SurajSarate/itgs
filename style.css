@@ -284,8 +284,8 @@ html {
 
 /* home banner */
 
-.banner{
-    height:100%;
+.banner {
+    height: 100%;
     background-color: #67C6A8;
     background-image: url("./assets/banner/banner-home.png");
 }
@@ -574,99 +574,292 @@ html {
     height: 10rem;
 }
 
-.about-box{
+.about-box {
     background-image: url('./assets/mask-group/Mask\ Group\ 16.png');
     /* height:80vmin; */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.about-inner{
+.about-inner {
     margin-top: 20px;
     height: auto;
     background-color: #fff;
-    border:3px solid #5CBF9E;
+    border: 3px solid #5CBF9E;
 }
 
-.vertical-line{
+.vertical-line {
     height: 100;
-    max-width:1px;
+    max-width: 1px;
     display: flex;
     align-items: baseline;
     justify-content: center;
 }
 
 
-.algorithmic-screening .sub-title{
-    font-size:6rem
+.algorithmic-screening .sub-title {
+    font-size: 6rem
 }
 
 
-
-
-
-.algorithmic-screening{
-    background-color: #F0F9FD;
-    height: 50rem;
+.algorithmic-screening {
+    height: 100vh;
     position: relative;
+    background: linear-gradient(180deg, rgba(240, 249, 253, 1) 50%, rgba(255, 255, 255, 1) 50%);
+
 }
 
-.algorithmic-screening-inner{
+.algorithmic-screening-inner {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     top: 100px;
-    left: 15%;
-    right:15%;
+    left: 0%;
+    right: 0%;
     height: 60rem;
     position: absolute;
-} 
-.screening-inner{
-    color:white;
+}
+
+.screening-inner {
+    color: white;
     align-items: center;
-    height: 400px;
+    height: 80vmax;
+    padding: 10px;
+    margin: 10px 0px;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column;
 }
 
-.screening-inner:nth-child(1){
+.screening-inner:nth-child(1) {
     background-color: #67C6A8;
 }
-.screening-inner:nth-child(2){
+
+.screening-inner:nth-child(2) {
     background-color: #78CDF4;
 }
-.screening-inner:nth-child(3){
+
+.screening-inner:nth-child(3) {
     background-color: #464D9C;
 }
-.screening-inner:nth-child(4){
+
+.screening-inner:nth-child(4) {
     background-color: #F6A141;
 }
 
-.screening-inner .sub-title{
+.screening-inner .sub-title {
     font-style: karbonbold;
-    font-weight:100;
+    font-weight: 100;
     font-size: 4rem;
 }
 
-.screening-inner img{
-    height:30%
+.screening-inner img {
+    height: 30%
 }
 
+.approach {
+    height: 45vmin;
+    background-color: #F6A141;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img {
+    height: 300px
+}
+
+.text {
+    text-align: start;
+    margin: 0px 150px;
+}
+
+.text .sub-title {
+    font-size: 4rem;
+}
+
+.text h4 {
+    font-style: karbonregular;
+    font-size: 3rem;
+}
+
+@media(max-width:990px) {
+    .algorithmic-screening {
+        margin-bottom: 150vh;
+    }
+
+    .approach h3 {
+        font-size: 2rem;
+    }
+}
+
+
+@media(max-width:768px) {
+    .algorithmic-screening {
+        margin-bottom: 100vh;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .approach img {
+        height: auto;
+        width: 50vw;
+    }
+
+    .approach {
+        height: auto;
+        display: flex;
+    }
+
+    .text {
+        margin: 10px;
+    }
+
+    .text h4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:425px) {
+    .algorithmic-screening {
+        margin-bottom: 290vh;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .approach h3 {
+        font-size: 2rem;
+    }
+
+    .approach {
+        height: auto;
+        margin-top: 10vh;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .approach img {
+        height: auto;
+        width: 100vw;
+    }
+
+    .text {
+        margin: 10px;
+    }
+}
 
 @media (max-width: 770px) {
-    .vertical-line{
-       display:none;
+    .vertical-line {
+        display: none;
     }
-    .about-inner{
-       margin: 10px;
+
+    .about-inner {
+        margin: 10px;
     }
-    .algorithmic-screening h2.sub-title{
-        font-size:3rem
+
+    .algorithmic-screening h2.sub-title {
+        font-size: 3rem
     }
-    
-    .algorithmic-screening-inner{
-        top:50px
+
+    .algorithmic-screening-inner {
+        top: 50px
     }
-    
+
 }
+
+
+.references {
+    margin: 6.6rem 0 4.6rem;
+  }
+  
+  @media (max-width: 480px) {
+    .references {
+      margin: 4rem 0;
+    }
+  }
+  
+  .references__list li {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    padding: 0 0 0 1.7em;
+    text-indent: -1.5em;
+    list-style-type: none;
+    counter-increment: item;
+  }
+  
+  .references__list li::before {
+    display: inline-block;
+    width: 1.5em;
+    padding-right: 0.8em;
+    font-family: "Karbonbold";
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+  }
+  
+  .references .accordion .card {
+    border: 2px solid #262933;
+    border-radius: 0.8rem;
+  }
+  
+  .references .accordion .card-header {
+    padding: 0.75rem 1.25rem;
+    background-color: #ffffff;
+    border-bottom: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .references .accordion .card-header button {
+    font-family: "karbonbold";
+    font-size: 3rem;
+    color: #2b2e3a;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .references .accordion .card-header button::after {
+    content: url("./assets/logo/up-arrow-circle.png");
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 2rem;
+    line-height: 0;
+  }
+  
+  @media (max-width: 1400px) {
+    .references .accordion .card-header button::after {
+      content: url("./assets/logo/up-arrow-circle-sm.png");
+    }
+  }
+  
+  .references .accordion .card-header button:hover {
+    color: inherit;
+    text-decoration: none !important;
+  }
+  
+  .references .accordion .card-header button.collapsed::after {
+    content: url("./assets/logo/down-arrow-circle.png");
+  }
+  
+  @media (max-width: 1400px) {
+    .references .accordion .card-header button.collapsed::after {
+      content: url("./assets/logo/down-arrow-circle-sm.png");
+    }
+  }
+  
+  footer {
+    font-family: "Karbon";
+    background-color: #2a2e3a;
+    color: #ffffff;
+    padding: 6.5rem 0 5.3rem;
+  }
+  
+  @media (max-width: 991px) {
+    footer {
+      padding: 2rem 0;
+    }
+  }
+  
