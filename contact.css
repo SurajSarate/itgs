@@ -1,0 +1,646 @@
+/* Fonts */
+@font-face {
+    font-family: "Karbon";
+    src: url("./assets/font/Karbon-Light.woff") format("woff2"), url("./assets/font/Karbon-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "karbonmedium";
+    src: url("./assets/font/karbon_medium-webfont.woff2") format("woff2"), url("./assets/font/karbon_medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "karbonsemibold_italic";
+    src: url("./assets/font/karbon_semibolditalic-webfont.woff2") format("woff2"), url("./assets/font/karbon_semibolditalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "karbonregular";
+    src: url("./assets/font/karbon-webfont.woff2") format("woff2"), url("./assets/font/karbon-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "karbonbold";
+    src: url("./assets/font/karbon-bold-webfont.woff2") format("woff2"), url("./assets/font/karbon-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "karbonregular";
+    src: url("./assets/font/karbon-regular-webfont.woff2") format("woff2"), url("./assets/font/karbon-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "karbon-semiboldkarbonSBd";
+    src: url("./assets/font/karbon-semibold-webfont.woff2") format("woff2"), url("./assets/font/karbon-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.karbon-reg {
+    font-family: "karbonregular";
+}
+
+.karbon-med {
+    font-family: "karbonmedium";
+}
+
+.karbon-sb {
+    font-family: "karbon-semiboldkarbonSBd";
+}
+
+.karbon-b {
+    font-family: "karbonbold";
+}
+
+/* Fonts End */
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "karbonregular";
+    font-size: 3rem;
+    color: #2b2e3a;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: #2a2e3a;
+    padding: 3rem 0;
+    margin-bottom: 1rem;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 3.6rem;
+    font-weight: normal;
+    color: #ffffff;
+    font-family: "karbonregular";
+    margin: 0 5rem;
+    padding: 0 0 0.3rem;
+    text-align: center;
+    line-height: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #67c6a8;
+}
+
+
+
+.nav-item.active:hover a {
+    cursor: auto;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #78cdf4;
+    font-family: "karbonbold";
+    border-bottom: 1px solid #78cdf4;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #ffffff !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 2rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+.banner {
+    background-size: 100% 100%;
+    min-height: 46.2rem;
+    color: #ffffff;
+    padding: 5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.banner .banner-title {
+    font-family: "karbonbold";
+    font-size: 5.5rem;
+    margin-bottom: 3.3rem;
+}
+
+
+
+.banner .banner-desc {
+    font-family: "karbonregular";
+    font-size: 4rem !important;
+    line-height: 5rem;
+}
+
+
+
+.breadcrumb-wrap {
+    position: relative;
+}
+
+.breadcrumb-wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/dashed-line.svg");
+    height: 1px;
+    width: 100%;
+}
+
+.breadcrumb-wrap .breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 3rem 0;
+}
+
+.breadcrumb-wrap .breadcrumb-item {
+    font-family: "karbonregular";
+    text-transform: uppercase;
+}
+
+
+.breadcrumb-wrap .breadcrumb-item a {
+    color: #2b2e3a;
+}
+
+.breadcrumb-wrap .breadcrumb-item.active {
+    font-family: "karbonregular";
+    color: #67c6a8;
+    text-transform: uppercase;
+}
+
+.breadcrumb-wrap .breadcrumb-item:nth-child(4):before {
+    padding-left: 0.5rem;
+}
+
+.breadcrumb-wrap .breadcrumb-item+.breadcrumb-item {
+    padding: 0px;
+}
+
+.breadcrumb-wrap .breadcrumb-item+.breadcrumb-item::before {
+    color: #2b2e3a;
+    content: ">";
+}
+
+.breadcrumb-wrap .breadcrumb-item:nth-child(2)::before {
+    content: "";
+}
+
+.contact-banner {
+    background-image: url("assets/banner/banner-img.png");
+    background-color: #78cdf4;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.sec-title {
+    font-family: "karbonbold";
+    font-size: 5rem;
+}
+
+
+.contact {
+    background-color: #EEF8F5;
+    height: 100vh;
+}
+
+.title {
+    font-family: "karbonbold";
+    font-size: 5rem;
+}
+
+.sub-title {
+    font-family: "karbonbold";
+    font-size: 3rem;
+}
+
+.form-sub-title {
+    font-family: "karbonregular";
+    font-size: 2.5rem;
+}
+
+.form-check {
+    padding-left: 2.25rem;
+}
+
+
+.outer-form {
+    background-color: #fff;
+    height: 100%;
+    margin: 20px;
+    -webkit-box-shadow: 10px 10px 21px -1px #00000029;
+    -moz-box-shadow: 10px 10px 21px -1px #00000029;
+    box-shadow: 10px 10px 21px -1px #00000029;
+}
+
+.inner-form {
+    height: 50vmin;
+}
+
+.margin-top{
+    margin-top:10px;
+}
+
+
+.input-div,
+.form-control {
+    height: 40px;
+    width: 100%;
+}
+
+.form-control {
+    background-color: #67C6A81A;
+    font-size: 2.5rem;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.input-div {
+    margin: 10px 0px;
+}
+
+.checkbox {
+    height: 12px;
+    border: 3px solid black;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center .btn {
+    color: #fff;
+    background-color: #67C6A8;
+    width: 40%;
+    height: 40px;
+    font-size: 3rem;
+    font-family: "karbonbold";
+
+}
+
+/* Footer */
+footer {
+    font-family: "Karbon";
+    background-color: #2a2e3a;
+    color: #ffffff;
+    padding: 6.5rem 0 5.3rem;
+}
+
+@media (max-width: 1600px) {
+    .navbar-light .navbar-brand img {
+        width: 30rem;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0 8rem;
+    }
+}
+
+@media(max-width:1440px) {
+    .contact {
+        margin-top: 0px !important;
+        margin-bottom: 40vh !important;
+    }
+
+    .center .btn {
+        margin-top: 50px;
+    }
+
+    .title {
+        padding-left: 15px;
+        font-size: 6rem;
+    }
+
+    html {
+        font-size: 40%;
+    }
+
+    .navbar {
+        padding: 2.5rem 0;
+    }
+
+    .banner {
+        min-height: 40rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .navbar-expand-xl>.container,
+    .navbar-expand-xl>.container-fluid,
+    .navbar-expand-xl>.container-lg,
+    .navbar-expand-xl>.container-md,
+    .navbar-expand-xl>.container-sm,
+    .navbar-expand-xl>.container-xl {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .banner {
+        background-size: cover;
+        background-position: top right;
+        background-image: none !important;
+        min-height: inherit;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        text-align: left;
+        margin: 0;
+        padding: 1rem 0;
+        border-top: 1px solid #575d70;
+    }
+
+    .outer-form{
+        margin-top: 0px !important;
+        margin-bottom: 50vh !important;
+    }
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 2rem 0;
+    }
+    .contact-address {
+        margin-top: 50px;
+    }
+
+    .contact-address img {
+        width: 90%;
+    }
+
+    .contact-address .form-sub-title {
+        margin: 0 !important;
+    }
+
+    .contact-address h3.form-sub-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumb-wrap .breadcrumb-item {
+        font-size: 2rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 3rem;
+    }
+    .contact {
+        margin-top: 0px !important;
+        margin-bottom: 90vh !important;
+    }
+    .outer-form {
+        height: max-content;
+
+    }
+    .inner-form {
+        height: 75vh;
+    }
+
+    .contact-address img {
+        width: 100%;
+    }
+
+    .contact-address .form-sub-title {
+        margin: 0 !important;
+    }
+
+    .contact-address h3.form-sub-title {
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width: 425px){
+    .banner .banner-title {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .sec-title {
+        font-size: 4rem;
+    }
+
+    .breadcrumb-wrap .breadcrumb-item:first-child {
+        margin-right: 1rem !important;
+    }
+
+    .breadcrumb-wrap .breadcrumb-item img {
+        width: 3rem;
+    }
+
+    .col-12 h2.sub-title {
+        font-size: 2.8rem;
+    }
+
+    .col-12 {
+        padding: 0;
+    }
+
+    .form-check {
+        padding: 0;
+        margin: 10px 0px;
+    }
+
+    .outer-form {
+        height: auto;
+    }
+
+    .inner-form {
+        height: 70vh;
+    }
+
+    .center .btn {
+        margin-top: 20px;
+    }
+
+    .contact {
+        margin-top: 0px !important;
+        margin-bottom: 90vh !important;
+    }
+
+    .contact-address {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-address img {
+        height: 100%;
+    }
+    .margin-top{
+        margin-top: 20px;
+    }
+    .contact-address .form-sub-title {
+        margin: 0px !important;
+    }
+}
+
+@media (max-width:375px) {
+    .title {
+        padding-left: 0;
+    }
+
+    .outer-form {
+        margin: 0 !important;
+    }
+
+    .outer-form div.col-12 {
+        padding: 0;
+    }
+
+    .inner-form {
+        height: 70vh;
+        margin-bottom: 20px;
+    }
+
+    .col-12 h2.sub-title {
+        font-size: 2.5rem;
+    }
+
+    .form-check {
+        padding: 0;
+        margin: 10px 0px;
+    }
+
+    .center .btn {
+        margin-top: 10px;
+        width: 75% !important;
+    }
+
+    .banner .banner-desc {
+        font-family: "karbonregular";
+        font-size: 3rem !important;
+        line-height: 4rem;
+    }
+
+    .contact {
+        margin-top: 0px !important;
+        margin-bottom: 100vh !important;
+    }
+
+    .contact-address {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-address img {
+        height: 100%;
+    }
+
+    .margin-top{
+        margin-top: 20px;
+    }
+
+    .contact-address .form-sub-title {
+        margin: 0 !important;
+    }
+
+    .contact-address h3.form-sub-title {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1920px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0 8rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .banner-caption {
+        padding-right: 10rem;
+        margin-left: -3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 75%;
+    }
+
+    .navbar .container {
+        max-width: 85%;
+    }
+}
